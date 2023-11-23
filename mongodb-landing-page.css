@@ -1,0 +1,283 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* CSS STYLING STARTS HERE */
+
+/* backgroung color */
+body {
+	background: #FFFFFF;
+  
+}
+
+/* .container {  
+  margin: 0 50px;
+} */
+
+.promo-banner {
+  background-color: #116149;
+  height: 40px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event {
+  border: solid #FFFFFF 1px;
+  background-color: none;
+  border-radius: 50px;  
+  letter-spacing: 1px;
+  width: 60px;
+  height:25px;
+  display: flex;
+  justify-content: center;
+}
+
+.log-container {
+  width: 150px;
+  height: 40px;
+}
+
+/* styling the navbar */
+.navbar-container {
+  border-bottom: solid #B8C4C2 1px;
+  margin-top: 0;
+  height: 100%;
+  display: flex;
+  z-index: 20;
+  background-color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+
+
+.left-navbar-container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.right-navbar-container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.search-icon {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background-color: #FFFFFF;
+}
+
+.signin-button  {
+  cursor: pointer;
+  text-decoration: none;
+  color: #001E2B;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  font-family: Akzidenz Grotesk BQ Light,Helvetica!important;
+  text-align: center;
+}
+
+.try-free-button  {
+  cursor: pointer;
+  color: #001E2B;
+  background-color: #00ED64;
+  border: solid #00ED64 1px;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  font-family: Akzidenz Grotesk BQ Light,Helvetica!important;
+  text-align: center;
+  margin-right: 3rem;
+}
+
+.try-free-button:hover {
+  border-radius: 50px;
+}
+
+.dropdown-icon {
+  color: black
+}
+
+.dropdown-icon::after {
+  content: '\25BC';
+  margin-left: 4px;
+}
+
+a  {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover  {
+  color: #116149;
+}
+
+.products-container {
+  position: relative;
+}
+
+.products-dropdown-container {
+  border: solid white 1px;
+  border-radius: 10px;
+  padding: 15px;
+  display: none;  
+  position: absolute;
+  background-color: white;
+  width: 180px;
+  top: 40px; 
+  transition: display 0.3s ease;
+  line-height: 50px;
+  font-family: OpenSans-Bold,Arial,sans-serif!important;
+  /* left: 100px; */
+}
+
+.products-container:hover  .products-dropdown-container {
+  display: block;
+}
+
+.resources-container {
+  position: relative;
+}
+
+
+.resources-dropdown-container {
+  border: solid white 1px;
+  border-radius: 10px;
+  padding: 15px;
+  display: none;  
+  position: absolute;
+  background-color: white;
+  width: 250px;
+  top: 40px; 
+  transition: display 0.3s ease;
+  line-height: 50px;
+  font-family: OpenSans-Bold,Arial,sans-serif!important;
+  /* left: 100px; */
+}
+
+.resources-container:hover  .resources-dropdown-container {
+  display: block;
+}
+
+.solutions-container {
+  position: relative;
+}
+
+
+.solutions-dropdown-container {
+  border: solid white 1px;
+  border-radius: 10px;
+  padding: 15px;
+  display: none;  
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  top: 40px; 
+  transition: display 0.3s ease;
+  line-height: 50px;
+  font-family: OpenSans-Bold,Arial,sans-serif!important;
+  /* left: 100px; */
+}
+
+.solutions-container:hover  .solutions-dropdown-container {
+  display: block;
+}
+
+.company-container {
+  position: relative;
+}
+
+
+.company-container {
+  border: solid white 1px;
+  border-radius: 10px;
+  padding: 15px;
+  display: none;  
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  top: 40px; 
+  transition: display 0.3s ease;
+  line-height: 50px;
+  font-family: OpenSans-Bold,Arial,sans-serif!important;
+  /* left: 100px; */
+}
+
+.company-container:hover  .company-dropdown-container {
+  display: block;
+}
