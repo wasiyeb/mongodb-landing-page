@@ -101,9 +101,9 @@ body {
 .navbar-container {
   border-bottom: solid #B8C4C2 1px;
   margin-top: 0;
+  padding: 28px;
   height: 100%;
   display: flex;
-  z-index: 20;
   background-color: #FFFFFF;
   position: sticky;
   top: 0;
