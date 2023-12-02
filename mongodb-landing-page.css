@@ -534,9 +534,9 @@ h1 {
   }
 
   .navbar-container {
-    padding: 40px;
+    padding: 30px;
     margin: 0;
-    height: 60px;
+    height: 30px;
     display: flex;
     justify-content: space-between;
   }
