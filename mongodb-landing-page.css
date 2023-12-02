@@ -195,6 +195,10 @@ body {
   background-color: #FFFFFF;
 }
 
+.searchIcon2 {
+  display: none;
+}
+
 .trail-btn  {
   cursor: pointer;
   color: #001E2B;
@@ -475,7 +479,7 @@ h1 {
   flex-direction: row;
   font-size: 40px;
   font-weight: 700;
-  gap: 5px;  
+  gap: 3px;  
   padding-left: 12px;
 }
 
@@ -531,6 +535,7 @@ h1 {
   .media-left-items {
     display: flex;
     justify-content: flex-end;
+    gap: 10px;
   }
 
   .navbar-container {
@@ -542,15 +547,20 @@ h1 {
   }
   .hamburgerIcon {
       width: 15px;
-      height: 3px;
+      height: 2px;
       background-color: #5D6971;
       margin: 6px 0;
       display: flex;
       justify-content: flex-end;
     }
 
-  .searchIcon {
-  padding: 0px 10px;
+  .searchIcon2 {
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    background-color: #FFFFFF;
+    /* padding: 0px 10px; */
 }
   .left-container {
     margin: 0;
