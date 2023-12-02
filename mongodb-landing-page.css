@@ -71,11 +71,19 @@ body {
   margin: 0 50px;
 } */
 
-.promo-banner {
+.promo-banner {  
+  cursor: pointer;
+  box-sizing: border-box;
   background-color: #116149;
-  height: 40px;
+  height: 55px;
   color: #FFFFFF;
-  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: Menlo !important;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 25px;
+  gap: 15px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,86 +94,124 @@ body {
   background-color: none;
   border-radius: 50px;  
   letter-spacing: 1px;
-  width: 60px;
-  height:25px;
+  width: 80px;
+  height:30px;
   display: flex;
   justify-content: center;
-}
-
-.log-container {
-  width: 150px;
-  height: 40px;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* styling the navbar */
+
+
 .navbar-container {
+  box-sizing: border-box;
+  font-family: Grotesk BQ Light,Helvetica;
   border-bottom: solid #B8C4C2 1px;
-  margin-top: 0;
-  padding: 28px;
-  height: 100%;
-  display: flex;
+  margin: 0;
+  width: 100%;
+  height: 125px;
   background-color: #FFFFFF;
-  position: sticky;
-  top: 0;
-  justify-content: space-between;
+  position: sticky;  
+  padding: 0px 130px;
+  /* top: 0; */
+
+  display: flex;
+  justify-content: center;
   align-items: center;
-  height: 50px;
 }
 
+.navbar-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-container {
+  box-sizing: border-box;
+  min-width: 100px;
+  font-size: 14px;
+  line-height: 37px;
+  height: 48px;
+  width: 190px;
+  max-width: none;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;  
+}
 
 
 .left-navbar-container {
   box-sizing: border-box;
+  font-size: 25px;
+  font-family: Euclid Circular A;
+  letter-spacing: unset;
+  width: 100%;
+  height: 100%;
+  border-bottom: 0;
+  white-space: nowrap;
+  
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
   flex-direction: row;
-  gap: 20px;
 }
 
 .right-navbar-container {
   box-sizing: border-box;
+  font-size: 25px;
+  font-family: Euclid Circular A;
+  letter-spacing: unset;
+  width: 100%;
+  height: 100%;
+  border-bottom: 0;
+  white-space: nowrap;
+  
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: row;
-  gap: 20px;
 }
 
-.search-icon {
+.products-container,
+.resources-container,
+.solutions-container,
+.company-container,
+.pricing-container,
+.searchIcon,
+.support,
+.signin,
+.trail-btn {
+  padding: 0px 20px;
+}
+
+.searchIcon {
   cursor: pointer;
   text-decoration: none;
   border: none;
   background-color: #FFFFFF;
 }
 
-.signin-button  {
-  cursor: pointer;
-  text-decoration: none;
-  color: #001E2B;
-  width: 150px;
-  height: 40px;
-  font-size: 16px;
-  font-family: Akzidenz Grotesk BQ Light,Helvetica!important;
-  text-align: center;
-}
-
-.try-free-button  {
+.trail-btn  {
   cursor: pointer;
   color: #001E2B;
   background-color: #00ED64;
-  border: solid #00ED64 1px;
+  border: solid #001E2B 1px;
   border-radius: 5px;
-  width: 120px;
-  height: 40px;
-  font-size: 16px;
-  font-family: Akzidenz Grotesk BQ Light,Helvetica!important;
-  text-align: center;
-  margin-right: 3rem;
+  line-height: 30px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 530;
+  font-family: Euclid Circular A;
+  letter-spacing: 0.16px;
+  padding: 15px 47px;
 }
 
-.try-free-button:hover {
-  border-radius: 50px;
+.trail-btn:hover {
+  border-radius: 40px;
 }
 
 .dropdown-icon {
@@ -185,6 +231,7 @@ a  {
 
 a:hover  {
   color: #116149;
+  transition: color 200ms,text-shadow 200ms;
 }
 
 .products-container {
@@ -262,8 +309,7 @@ a:hover  {
   position: relative;
 }
 
-
-.company-container {
+.company-dropdown-container {
   border: solid white 1px;
   border-radius: 10px;
   padding: 15px;
@@ -280,4 +326,252 @@ a:hover  {
 
 .company-container:hover  .company-dropdown-container {
   display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 0;
+}
+
+.left-container {
+  margin: 0px 0px 0px 140px;
+  padding: 30px 0px 120px 24px;
+  font-family: Akzidenz Grotesk BQ Light,Helvetica;
+  color: #42494f;
+}
+
+.mongodb-atlas {
+  box-sizing: border-box;
+  margin: 15px 0px;
+
+  font-family: "Source Code Pro", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: #3d4f58;
+}
+
+h1 {
+  margin: 0px 0px 30px;
+  font-family: "MongoDB Value Serif", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  color: #001e2b;
+  padding: 0;
+  letter-spacing: 1px;
+  max-width: 600px;
+}
+
+.main-container {
+  margin: 0px 0px 40px;
+  font-family: "MongoDB Value Serif", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #001e2b;
+  padding: 0;
+  letter-spacing: 1px;
+  max-width: 600px;
+}
+
+.startFree-btn  {
+  cursor: pointer;
+  color: #001E2B;
+  background-color: #00ED64;
+  border: solid #001E2B 1px;
+  border-radius: 5px;
+  line-height: 30px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 530;
+  font-family: Euclid Circular A;
+  letter-spacing: 0.16px;
+  padding: 15px 47px;
+}
+
+.startFree-btn:hover {
+  border-radius: 40px;
+}
+
+.promo-container {
+  cursor: pointer;
+  font-family: "MongoDB Value Serif", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #001e2b;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  max-width: 600px;
+  gap: 40px;
+}
+
+.media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+
+.right-arrow:before {
+  width: 35px;
+  height: 2px;
+  background: #014330;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.right-arrow:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 15px solid #014330;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  vertical-align: middle;
+}
+
+.lounch-btn:hover {  
+  transition: width 300ms ease;
+}
+
+.right-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 800px;
+  background: #21313c;
+  border-radius: 24px 0 0 24px;
+  border: 1px solid #5d6c74;
+  box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.13), 0px 26px 44px rgba(0, 30, 43, 0.12);
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+.dot-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-size: 40px;
+  font-weight: 700;
+  gap: 5px;  
+  padding-left: 12px;
+}
+
+.red-dot {
+  color: #F3461F;
+}
+.yellow-dot {
+  color: #FFE212;
+}
+.green-dot {
+  color: #00AA57;
+}
+
+.mdb7 {
+  padding: 28px 39px;
+  color: #b8c4c2;
+  font-family: "Source Code Pro", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid #5d6c74;
+  border-bottom: 1px solid #5d6c74;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .navbar-items{
+    display: none;
+  }
+  h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .main-container {
+    font-size: 15px;
+  }
+
+  .promo-banner {
+    font-size: 12px;
+  }
+  .logo-container {
+    min-width: 100px;
+    font-size: 14px;
+    line-height: 37px;
+    max-width: 0;
+  }
+
+  .media-left-items {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar-container {
+    padding: 40px;
+    margin: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hamburgerIcon {
+      width: 15px;
+      height: 3px;
+      background-color: #5D6971;
+      margin: 6px 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+  .searchIcon {
+  padding: 0px 10px;
+}
+  .left-container {
+    margin: 0;
+    padding-left: 30px;
+  }
+
+  .right-container {
+    display: none;
+  }
+
+  .startFree-btn {    
+  line-height: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  width: 400px;
+  }  
+
+  .promo-container-media {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
